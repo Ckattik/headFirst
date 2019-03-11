@@ -1,0 +1,18 @@
+package headFirst_SinUDuck_impl;
+
+public class MallardDuck extends Duck {
+
+	public void display() {
+		System.out.println("See MallardDuck");
+	}
+	
+	
+	public void fly() {
+		System.out.println("fly MallardDuck");
+	}
+	
+	
+	public void quack() {
+		System.out.println("quak MallardDuck");
+	}
+}
