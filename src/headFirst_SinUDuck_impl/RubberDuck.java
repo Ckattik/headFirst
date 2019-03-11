@@ -1,6 +1,6 @@
 package headFirst_SinUDuck_impl;
 
-public class RubberDuck extends Duck{
+public class RubberDuck extends Duck implements Quackble{
 
 	
 

@@ -1,6 +1,6 @@
 package headFirst_SinUDuck_impl;
 
-public class MallardDuck extends Duck {
+public class MallardDuck extends Duck implements Flyble, Quackble{
 
 	public void display() {
 		System.out.println("See MallardDuck");

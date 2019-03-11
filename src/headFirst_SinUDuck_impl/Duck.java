@@ -3,7 +3,7 @@ package headFirst_SinUDuck_impl;
 public class Duck {
 
 	public void swim() {
-		System.out.println("Bul,bul");
+		System.out.println("Bul Duck");
 	}
 	
 	public void display() {
