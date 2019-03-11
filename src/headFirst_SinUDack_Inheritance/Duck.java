@@ -1,4 +1,4 @@
-package headFirst_SinUDack;
+package headFirst_SinUDack_Inheritance;
 
 public class Duck {
 
