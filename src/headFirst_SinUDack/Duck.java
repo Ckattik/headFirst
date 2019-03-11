@@ -14,4 +14,10 @@ public class Duck {
 		System.out.println("see, see ");
 	}
 	
+	
+	public void fly() {
+		System.out.println("Fly,fly");
+		
+	}
+	
 }
