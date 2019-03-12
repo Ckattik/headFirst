@@ -1,10 +1,15 @@
 package headFirst_SinUDuck_Behavior;
 
+import headFirst_SinUDuck_Interface.QuackBehavior;
+
 public class Duck {
 
 	
 	FlyBehavior flyBehavior;
-	QuakBehavior quakBehavior;
+	QuakBehavior quackBehavior;
+	
+	
+	
 	
 	
 	public void swim() {
@@ -17,10 +22,14 @@ public class Duck {
 	}
 	
 	public void perfomQuack() {
+		quackBehavior.quak();
+        		
 		System.out.println("Quak &&&&");
 	}
 	
 	public void perfomFly() {
+		
+		flyBehavior.fly();
 		System.out.println("Fly &&&&");
 	}
 	
