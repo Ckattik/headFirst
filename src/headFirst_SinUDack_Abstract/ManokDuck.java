@@ -14,5 +14,5 @@ public class ManokDuck implements QuackBehavior {
 		
 		
 	}
-
+          /////////////// Как зделать без супер класса!!!!!!!!!!!!!!
 }
