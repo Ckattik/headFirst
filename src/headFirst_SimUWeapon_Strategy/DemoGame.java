@@ -20,7 +20,7 @@ public class DemoGame {
 		
 		Character troll = new Troll();
 		troll.perfomWeapon();
-		troll.setWeapon(new KnifeBehavior());
+		troll.setWeapon(new KnifeBehavior());   //set Behavior troll
 		troll.perfomWeapon();
 		
 		
