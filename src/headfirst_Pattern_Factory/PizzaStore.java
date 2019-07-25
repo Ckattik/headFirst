@@ -1,15 +1,15 @@
 package headfirst_Pattern_Factory;
 
-public class PizzaStore {
+public abstract class PizzaStore {
 
-	SimplePizzaFactory factory;
+	//SimplePizzaFactory factory;
 	
-	public PizzaStore(SimplePizzaFactory factory) {
+//	public PizzaStore(SimplePizzaFactory factory) {
 		
-		this.factory = factory;
+	//	this.factory = factory;
 		
 		
-	}
+	//}
 	
 	
 	
@@ -17,7 +17,7 @@ public class PizzaStore {
 		Pizza pizza;
 	
 	
-	pizza = factory.createPizza(type);
+	pizza = createPizza(type);
 	
 	pizza.prepare();
 	pizza.bake();
@@ -26,6 +26,9 @@ public class PizzaStore {
 	
 	return pizza;
 	}
+	
+	
+	abstract Pizza createPizza(String type);
 	
 	// other method here
 	
