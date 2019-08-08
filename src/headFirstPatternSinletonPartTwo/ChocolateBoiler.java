@@ -1,15 +1,32 @@
 package headFirstPatternSinletonPartTwo;
 
+import headFirstPatternSinleton.Singleton;
+
 public class ChocolateBoiler {
 
 	private boolean empty;
 	private boolean boiled;
 	
+	private static ChocolateBoiler uniqInstance;
 	
-	public ChocolateBoiler() {
+	private ChocolateBoiler() {
 		empty = true;
 		boiled = false;
+	
 	}
+	
+	
+	// ????????????????????
+	
+	public static synchronized ChocolateBoiler getInstance() {
+		if(uniqInstance == null) {
+			uniqInstance = new ChocolateBoiler();
+		}
+		return uniqInstance;
+	
+	
+	
+}
 	
 	public void fill() {
 		if(isEmpty()) {
@@ -21,7 +38,7 @@ public class ChocolateBoiler {
 	
 	
 	public void drain() {
-		if(!isEmpty) && isBoiled(){
+		if(!isEmpty() && isBoiled()){
 			//Слить нагретое молоко и шоколад
 	       
 			empty = true;
@@ -31,7 +48,7 @@ public class ChocolateBoiler {
 	}
 	
 	public void boil() {
-		if(!isEmpty && isBoiled) {
+		if(!isEmpty() && isBoiled()) {
 			boiled = true;
 			
 			// довести содержимое до кипения 
