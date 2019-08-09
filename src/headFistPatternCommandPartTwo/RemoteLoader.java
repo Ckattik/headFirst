@@ -5,7 +5,7 @@ public class RemoteLoader {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		RemoteControl remoteControl = new RemoteControl();
+		RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();
 		
 		
 		Light livingRoomLight = new Light("Living room");   //Создание всех устройств
@@ -30,7 +30,7 @@ public class RemoteLoader {
 		StreoOffWithCDCommand streoOffWithCDCommand = new StreoOffWithCDCommand(stereo);
 	
 		
-		remoteControl.setCommand(0, livingRoomLightOn,livingRoomLightOff );          //Готовіе команды связываються с ячейками пульта
+		remoteControl.setCommand(0, livingRoomLightOn,livingRoomLightOff );          //Готовые команды связываються с ячейками пульта
 		remoteControl.setCommand(1, kitchenRoomLightOn, kitchenRoomLightOff);
 		remoteControl.setCommand(2, cellingFanOn, cellingFanOff);
         remoteControl.setCommand(3, streoOnWithCDCommand, streoOffWithCDCommand);

@@ -19,4 +19,11 @@ public class LivingRoomLight implements Command {
 		// TODO Auto-generated method stub
 		light.onLight();
 	}
+	
+	
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+	  light.offLight();	
+	}
 }

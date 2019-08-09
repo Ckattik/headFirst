@@ -3,12 +3,13 @@ package headFistPatternCommandPartTwo;
 
 
 // Реализация пульта на 7 кнопок 
-public class RemoteControl {
+public class RemoteControlWithUndo {
 	
 	Command [] onCommands;   // В этой версии бульт будет поддерживать все 7 команд вкл/выкл которые будут
 	Command [] offCommands;   // храниться в соответствующих масивах
+	Command undoCommand;      //Переменная для хранения последней выполненой команды
 	
-	public RemoteControl() {
+	public RemoteControlWithUndo() {
 		onCommands = new Command[7];   // Конструктор создает экземпляры команд и инициализирует массивы onCommands и offCommands
 		offCommands = new Command[7];
 		
@@ -19,6 +20,9 @@ public class RemoteControl {
 			onCommands[i] = noCommand;
 			offCommands[i] = noCommand;
 		}
+		
+		undoCommand = noCommand;
+		
 	}
 
 	public void setCommand(int slot, Command onCommand,Command offCommand) {   // Метод setComand получает ячейку и команды вкл/выкл
@@ -32,11 +36,17 @@ public class RemoteControl {
 	
 	public void onButtonWasPushed(int slot) {
 		onCommands[slot].execute();
+		  undoCommand = onCommands[slot];            //При нажатии кнопки мы сначала читаем команду и выполняем ее, а за тем сох. ссылку на нее в переменной undoCommand 
 	}                                                  // при нажатии вкл или выкл пульт вызывает соответствующий метод
 	
 	public void offButtonWasPushed(int slot) {
 		offCommands[slot].execute();
+		undoCommand = offCommands[slot];
 	}
+	
+   public void undoButtonWasPushed() {          // При нажатии кнопки отмены мы вызыывем метод undo() команды, хранящйся п переменной undoCommand
+	   undoCommand.undo();                      // Вызов отменяет операцию последней выполненой команды
+   }
 	
 	public String toString() {
 		

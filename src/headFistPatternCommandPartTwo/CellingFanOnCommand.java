@@ -16,4 +16,10 @@ public class CellingFanOnCommand implements Command{
 		// TODO Auto-generated method stub
 		fan.onFan();
 	}
+	
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+	    fan.offFan();	
+	}
 }

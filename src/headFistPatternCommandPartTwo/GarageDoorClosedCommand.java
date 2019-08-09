@@ -15,4 +15,10 @@ public class GarageDoorClosedCommand implements Command{
 	        door.doorClosed();	
 	}
 	
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+	    door.doorOpen();	
+	}
+	
 }

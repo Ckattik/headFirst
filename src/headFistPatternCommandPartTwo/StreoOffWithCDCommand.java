@@ -16,6 +16,11 @@ public class StreoOffWithCDCommand implements Command {
 	      stereo.offStereo();	
 	}
 	
+	  @Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		stereo.onStereo();
+	}
 	
 	
 	

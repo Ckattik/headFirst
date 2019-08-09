@@ -17,4 +17,9 @@ public class KitchenLight implements Command {
 		light.onLight();
 	}
 
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		light.offLight();
+	}
 }

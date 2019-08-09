@@ -17,5 +17,11 @@ Fan fan;
 		    fan.offFan();
 		
 		}
+	
+	@Override
+		public void undo() {
+			// TODO Auto-generated method stub
+		fan.onFan();	
+		}
 
 }
