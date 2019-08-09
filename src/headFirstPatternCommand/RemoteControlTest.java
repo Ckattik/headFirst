@@ -12,7 +12,7 @@ public class RemoteControlTest {    //  клиент
 		
 		
 		Door door = new Door();
-		GarageDoorOpenCommand openDoor = new GarageDoorOpenCommand(door);
+		GarageDoorOpen openDoor = new GarageDoorOpen(door);
 		
 		
 		

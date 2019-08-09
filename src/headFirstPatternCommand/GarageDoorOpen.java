@@ -1,11 +1,11 @@
 package headFirstPatternCommand;
 
-public class GarageDoorOpenCommand implements Command{
+public class GarageDoorOpen implements Command{
 
 	
 	Door door;
 	
-	public GarageDoorOpenCommand(Door door) {
+	public GarageDoorOpen(Door door) {
 		this.door = door;
 	}
 
