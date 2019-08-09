@@ -1,8 +1,10 @@
 package headFistPatternCommandPartTwo;
 
+import headFistPatternCommandPartTwo.RemoteControlWithUndo;
+
 public class RemoteLoader {
 
-	public static void main(String[] args) {
+	    static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();

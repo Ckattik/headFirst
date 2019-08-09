@@ -1,6 +1,7 @@
 package headFistPatternCommandPartTwo;
 
-
+import headFistPatternCommandPartTwo.Command;
+import headFistPatternCommandPartTwo.noCommand;
 
 // Реализация пульта на 7 кнопок 
 public class RemoteControlWithUndo {
@@ -13,7 +14,7 @@ public class RemoteControlWithUndo {
 		onCommands = new Command[7];   // Конструктор создает экземпляры команд и инициализирует массивы onCommands и offCommands
 		offCommands = new Command[7];
 		
-		Command noCommand = new  noCommand();
+		Command noCommand = new noCommand();
 		
 		for(int i = 0; i < 7; i++) {
 			
