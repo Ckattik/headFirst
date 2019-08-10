@@ -1,8 +1,10 @@
-package headFistPatternCommandPartTwo;
+package patternCommandPartTree;
+
+
 
 public class LightOnCommand implements Command {
-
-    Light light;
+	
+Light light;
 	
 	
 	public LightOnCommand(Light light) {
@@ -19,8 +21,8 @@ public class LightOnCommand implements Command {
     @Override
     	public void undo() {
     		// TODO Auto-generated method stub
-    	light.offLight();	
+    	
     	}
 	
-	
+
 }
