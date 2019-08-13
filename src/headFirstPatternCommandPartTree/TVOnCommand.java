@@ -1,18 +1,18 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
-public class TVOffCommand implements Command{
-
-TV tv;
+public class TVOnCommand implements Command{
+	
+    TV tv;
 	
 	
-	public TVOffCommand(TV tv) {
+	public TVOnCommand(TV tv) {
 		this.tv = tv;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	tv.offTV();
+    	tv.onTV();
     	
     	}
     
@@ -23,6 +23,4 @@ TV tv;
     	}
 
 
-	
-	
 }

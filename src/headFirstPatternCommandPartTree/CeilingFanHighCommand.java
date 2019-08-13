@@ -1,11 +1,11 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
-public class CeilingFanOffCommand implements Command{
-	
+public class CeilingFanHighCommand implements Command{
+
 	CeilingFan ceilingFan;
 	int prevSpeed;
 	
-	public CeilingFanOffCommand(CeilingFan ceilingFan) {
+	public CeilingFanHighCommand(CeilingFan ceilingFan) {
 		this.ceilingFan = ceilingFan;
 		
 	}
@@ -15,7 +15,7 @@ public class CeilingFanOffCommand implements Command{
 		// TODO Auto-generated method stub
 	
 		prevSpeed = ceilingFan.getSpeed();
-		ceilingFan.off();
+		ceilingFan.high();
 		
 		
 	}
@@ -39,5 +39,5 @@ public class CeilingFanOffCommand implements Command{
 	}
 	
 	
-
+	
 }

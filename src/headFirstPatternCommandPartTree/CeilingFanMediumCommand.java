@@ -1,4 +1,4 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
 public class CeilingFanMediumCommand implements Command {
 

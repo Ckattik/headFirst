@@ -1,20 +1,20 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
 
 
-public class StereoOnCommand implements Command {
+public class HothubOnCommand implements Command {
 	
-	Stereo stereo;
+	Hothub hothub;
 	
 	
-	public StereoOnCommand(Stereo stereo) {
-		this.stereo = stereo;
+	public HothubOnCommand(Hothub hothub) {
+		this.hothub = hothub;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	stereo.onStereo();
+    	hothub.onHothub();
     	
     	}
     
@@ -25,4 +25,8 @@ public class StereoOnCommand implements Command {
     	}
 
 
+	
+	
+	
+	
 }

@@ -1,20 +1,20 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
 
 
-public class LightOffCommand implements Command {
-
+public class LightOnCommand implements Command {
+	
 Light light;
 	
 	
-	public LightOffCommand(Light light) {
+	public LightOnCommand(Light light) {
 		this.light = light;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	light.offLight();
+    	light.onLight();
     	
     	}
     
@@ -23,5 +23,6 @@ Light light;
     		// TODO Auto-generated method stub
     	
     	}
+	
 
 }

@@ -1,20 +1,18 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
+public class TVOffCommand implements Command{
 
-
-public class HothubOnCommand implements Command {
-	
-	Hothub hothub;
+TV tv;
 	
 	
-	public HothubOnCommand(Hothub hothub) {
-		this.hothub = hothub;
+	public TVOffCommand(TV tv) {
+		this.tv = tv;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	hothub.onHothub();
+    	tv.offTV();
     	
     	}
     
@@ -25,8 +23,6 @@ public class HothubOnCommand implements Command {
     	}
 
 
-	
-	
 	
 	
 }

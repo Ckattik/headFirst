@@ -1,18 +1,20 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
-public class StereoOffCommand implements Command{
 
-Stereo stereo;
+
+public class LightOffCommand implements Command {
+
+Light light;
 	
 	
-	public StereoOffCommand(Stereo stereo) {
-		this.stereo = stereo;
+	public LightOffCommand(Light light) {
+		this.light = light;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	stereo.offStereo();
+    	light.offLight();
     	
     	}
     
@@ -22,6 +24,4 @@ Stereo stereo;
     	
     	}
 
-	
-	
 }

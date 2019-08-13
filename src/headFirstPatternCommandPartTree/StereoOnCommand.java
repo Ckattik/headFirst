@@ -1,18 +1,20 @@
-package patternCommandPartTree;
+package headFirstPatternCommandPartTree;
 
-public class TVOnCommand implements Command{
+
+
+public class StereoOnCommand implements Command {
 	
-    TV tv;
+	Stereo stereo;
 	
 	
-	public TVOnCommand(TV tv) {
-		this.tv = tv;
+	public StereoOnCommand(Stereo stereo) {
+		this.stereo = stereo;
 	}
 	
     @Override
     	public void execute() {
     		// TODO Auto-generated method stub
-    	tv.onTV();
+    	stereo.onStereo();
     	
     	}
     
