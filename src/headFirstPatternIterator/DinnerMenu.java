@@ -38,10 +38,15 @@ public void addItem(String name, String description, boolean vegetarian, double 
 		
 	}
 
-    public MenuItem [] getMenuItems() {
+    /*public MenuItem [] getMenuItems() {
     	return menuItems;
-    }
+    }*/
 
-
+      public Iterator createIterator() {                // метод createIterator() создает обькт DinnerMenuIterator для массива menuItems 
+    	  return new DinnerMenuIterator(menuItems);     // и возвращает его клиенту 
+      }                                                 
+                                                        // Метод возвращат интерфейс Iterator.Клиенту не нужно знать ни то как коллекция 
+                                                        // menuItems храниться в DinnerMenu, не то как реализован DinnerMenuIterator.Клиент
+                                                        // просто использует итератор для перебора елементов
 	
 }
