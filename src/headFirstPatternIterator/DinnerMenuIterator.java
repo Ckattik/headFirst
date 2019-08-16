@@ -1,5 +1,7 @@
 package headFirstPatternIterator;
 
+import java.util.Iterator;
+
 public class DinnerMenuIterator implements Iterator {
 
 	MenuItem [] items;

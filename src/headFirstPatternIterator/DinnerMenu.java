@@ -1,6 +1,8 @@
 package headFirstPatternIterator;
 
-public class DinnerMenu {
+import java.util.Iterator;
+                                      //Нужен Iterator так как масиввы не поддерживают итератор, прийдеться написать свой собственый
+public class DinnerMenu implements Menu{
 
 	static final int MAX_ITEMS = 6;
 	int numberOfItems = 0;
@@ -42,11 +44,21 @@ public void addItem(String name, String description, boolean vegetarian, double 
     	return menuItems;
     }*/
 
-      public Iterator createIterator() {                // метод createIterator() создает обькт DinnerMenuIterator для массива menuItems 
-    	  return new DinnerMenuIterator(menuItems);     // и возвращает его клиенту 
-      }                                                 
+   //   public Iterator createIterator() {                // метод createIterator() создает обькт DinnerMenuIterator для массива menuItems 
+   // 	  return new DinnerMenuIterator(menuItems);     // и возвращает его клиенту 
+   //   }                                                 
                                                         // Метод возвращат интерфейс Iterator.Клиенту не нужно знать ни то как коллекция 
                                                         // menuItems храниться в DinnerMenu, не то как реализован DinnerMenuIterator.Клиент
                                                         // просто использует итератор для перебора елементов
-	
+       @Override
+       	public Iterator createIterator() {
+       		// TODO Auto-generated method stub
+       		return new DinnerMenuIterator(menuItems);
+                   
+       
+       
+       }	
+
+
+
 }

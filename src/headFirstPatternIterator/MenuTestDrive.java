@@ -5,10 +5,13 @@ public class MenuTestDrive {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		PancaceHouseItem pancaceHouseItem = new PancaceHouseItem();
-		DinnerMenu dinnerMenu = new DinnerMenu();
+		Menu pancaceHouseItem = new PancaceHouseItem();
+		Menu dinnerMenu = new DinnerMenu();
+		Menu cafeMenu = new CafeMenu();
 		
-		Waitress waitress = new Waitress(pancaceHouseItem, dinnerMenu);
+		
+		
+		Waitress waitress = new Waitress(pancaceHouseItem, dinnerMenu, cafeMenu);
 		waitress.printMenu();
 		
 		

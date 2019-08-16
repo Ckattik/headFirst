@@ -1,6 +1,10 @@
 package headFirstPatternIterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
+// Нет смысла в этом классе так как ArrayList Поддерживает iterator()
+
 
 public class BreakfastMenuIterator implements Iterator {
 

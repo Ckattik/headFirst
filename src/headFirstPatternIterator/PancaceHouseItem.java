@@ -1,8 +1,9 @@
 package headFirstPatternIterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancaceHouseItem {         //Реализация меню блинной
+public class PancaceHouseItem implements Menu{         //Реализация меню блинной
         ArrayList menuItems;
         
 	public PancaceHouseItem() {
@@ -31,8 +32,15 @@ public class PancaceHouseItem {         //Реализация меню блинной
 		return menuItems;
 	}*/
 	
-    public Iterator createIterator() {                // метод createIterator() создает обькт BreakfastMenuIterator для массива menuItems 
-  	  return new BreakfastMenuIterator(menuItems);     // и возвращает его клиенту  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    }  
+                 
+  	     
+      
+    @Override
+    	public Iterator createIterator() {                               // метод createIterator() создает обькт BreakfastMenuIterator для массива menuItems 
+    		// TODO Auto-generated method stub                             // и возвращает его клиенту  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    	//	return new BreakfastMenuIterator(menuItems);
+    	     return menuItems.iterator();
+    	}
+    
 	
 }
