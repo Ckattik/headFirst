@@ -1,5 +1,7 @@
 package headFirstPetternLinker;
 
+import java.util.Iterator;
+
 /* Так как одни методы имеют смысл только для MenuItem, а другие только для 
  * Menu, реализация по умолчанию инициирует UnsupportedOperationException()
  * Если обьект MenuItem или Menu не поддерживает операцию, емуне нужно нечего делать 
@@ -40,6 +42,7 @@ public abstract class MenuComponent {
 		throw new UnsupportedOperationException();        // реализацию по умолчанию
 	}
 	
+	public abstract Iterator createIterator();
 	
 	
 	

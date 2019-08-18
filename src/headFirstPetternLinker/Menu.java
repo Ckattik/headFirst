@@ -10,6 +10,15 @@ public class Menu extends MenuComponent {
 	String name;                                 // использоватьс€ внутрен€€ коллекци€ ArrayList
 	String description;
 	
+	Iterator iterator = null;
+	
+	public Iterator createIterator() {
+		if(iterator == null) {
+			iterator = new CompositeIterator(menuComponents.iterator());
+		}
+	
+	    return iterator;
+	}
 	
  	public Menu(String name, String description) {  // ќтличаетьс€ от нашей старой реализации: с каждым меню св€зываетьс€ название и описание
 		// TODO Auto-generated constructor stub
