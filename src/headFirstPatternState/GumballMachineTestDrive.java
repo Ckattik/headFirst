@@ -15,24 +15,24 @@ public class GumballMachineTestDrive {
 		System.out.println(gumballMachine);                    // Выводим состояние автомата 
 		
 		
-		gumballMachine.insertQuarter();                        //// Бросаем монетку
-		gumballMachine.ejectQuater();                          // Требуем ее обратно
-		gumballMachine.turnCrank();                            // Дергаем за рычаг , автомат не должен выдать шарик 	
+//		gumballMachine.insertQuarter();                        //// Бросаем монетку
+//		gumballMachine.ejectQuater();                          // Требуем ее обратно
+//		gumballMachine.turnCrank();                            // Дергаем за рычаг , автомат не должен выдать шарик 	
 	
 	
-		System.out.println(gumballMachine);                    // Выводим состояние автомата
+//		System.out.println(gumballMachine);                    // Выводим состояние автомата
 	
 		
 		gumballMachine.insertQuarter();
 		gumballMachine.turnCrank();
 		gumballMachine.insertQuarter();                        //// Бросаем монетку
 		gumballMachine.turnCrank();                            // Дергаем за рычаг , автомат должен выдать шарик
-		gumballMachine.ejectQuater();                          // Требуем вернуть монетку которую не бросали
+//		gumballMachine.ejectQuater();                          // Требуем вернуть монетку которую не бросали
 		
 		
 		System.out.println(gumballMachine);
 	
-		gumballMachine.insertQuarter();                         // Бросаем две монетки 
+/*		gumballMachine.insertQuarter();                         // Бросаем две монетки 
 		gumballMachine.insertQuarter();
 		gumballMachine.turnCrank();
 		gumballMachine.insertQuarter();
@@ -41,7 +41,7 @@ public class GumballMachineTestDrive {
 		gumballMachine.turnCrank();
 		
 		System.out.println(gumballMachine);
-		
+	*/	
 	}
 
 }
