@@ -11,12 +11,18 @@ public class GumballMachine {
 	State state = soldOutState;                     // Переменная экземпляра для хранения State 
 	int count = 0;                                  // В переменной count храниться количество шариков - изначально автомат пуст 
 
-	public GumballMachine(int numberGumballs) {     // Конструктор получает исходное количество шариков и сохраняет его в переменной
+	String location;
+	
+	
+	
+	public GumballMachine(String location, int numberGumballs) {     // Конструктор получает исходное количество шариков и сохраняет его в переменной
 		// TODO Auto-generated constructor stub     // Также создает екземпляры State для всех состояний 
 		soldOutState = new SoldState(this);
 	    noQuarterState = new NoQuaterState(this);
 		hasQuarterState = new HasQuaterState(this);
 		soldState = new SoldOutState(this);
+		
+		this.location = location;
 		
 		this.count = numberGumballs;
 		if(numberGumballs > 0) {
@@ -50,6 +56,15 @@ public class GumballMachine {
 		}
 	}
 	
+	
+	
+	
+	
+	public State getState() {
+		return state;
+	}
+	
+	
 	public State getHasQuarterState() {
 		return hasQuarterState;
 	}
@@ -74,4 +89,11 @@ public class GumballMachine {
 	public State getWinnerState() {
 		return winnerState;
 	}
+
+
+     public String getLocation() {
+		return location;
+	}
+
+
 }
