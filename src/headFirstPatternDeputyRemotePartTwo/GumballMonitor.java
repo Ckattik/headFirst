@@ -1,4 +1,4 @@
-package headFirstPatternDeputyPartTwo;
+package headFirstPatternDeputyRemotePartTwo;
 
 import java.rmi.*;                // Ќеобходимо ипортировать пакет rmi потомучто ниже используетьс€ класс RemoteException 
 

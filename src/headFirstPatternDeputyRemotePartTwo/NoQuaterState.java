@@ -1,4 +1,4 @@
-package headFirstPatternDeputyPartTwo;
+package headFirstPatternDeputyRemotePartTwo;
 
 public class NoQuaterState implements State {
 

@@ -1,4 +1,4 @@
-package headFirstPatternDeputyPartTwo;
+package headFirstPatternDeputyRemotePartTwo;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
