@@ -48,7 +48,13 @@ public class DuckSimulator {
 		simulate(rubberDuck);
 		simulate(gooseDuck);*/
 		
-		System.out.println("\nDuck Simulator: Whole Flock Simulation");
+		
+		
+		System.out.println("\nDuck Simulator: With Observer");
+		Quackologolist quackologist = new Quackologolist();
+		flockOfDucks.registerObserver(quackologist);
+		
+		
 		simulate(flockOfDucks);                                               // Сначала тестируем всю стаю
 		
 		System.out.println("\nDuck Simulator: Mallard Flock Simulation");
