@@ -1,0 +1,10 @@
+package headFirstPatternManyPatterns;
+
+public class Goose {
+
+	public void honk() {
+		System.out.println("Honk");
+	}
+	
+	
+}
