@@ -4,8 +4,8 @@ public class DJTestDrive {
 
 	public static void main(String [] args) {
 		
-		BeatModelInterface model = BeatModel();                              // —начала создаетьс€ модель 
-		ControllerInterface controller = new BeatControllerInterface(model); // «атем создаем контроллер и передаем ему модель 
+		BeatModelInterface model = new BeatModel();                              // —начала создаетьс€ модель 
+		ControllerInterface controller = new BeatController(model);               // «атем создаем контроллер и передаем ему модель 
 	}                                                                        // Ќапомним что предсавление создаетьс€ контролером потому нам 
 	                                                                         // этого делать не нужно
 	
